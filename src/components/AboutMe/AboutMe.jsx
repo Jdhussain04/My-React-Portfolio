@@ -5,7 +5,7 @@ import AboutImage from '../../assets/about-image1.png'
 const AboutMe = () => {
   return (
     <section>
-      <div className="flex gap-5 wrapper p-block-9">
+      <div className="flex gap-5 wrapper p-block-9 border-btm">
         <div className="about-image">
             <img src={AboutImage}/>
         </div>
