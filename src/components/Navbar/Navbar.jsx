@@ -1,12 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import { FiSun } from "react-icons/fi";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
+import { IoMoonOutline } from "react-icons/io5";
+
 
 
 const Navbar = () => {
 
     const[isMenuActive, setIsMenuActive] = useState(false);
+
+    const[theme, setTheme] = useState('dark');
+
+    useEffect(() => {
+
+        document.documentElement.setAttribute('data-theme', theme);
+
+    }, [theme])
+
+    const toggleTheme = () =>{
+        setTheme(prev =>(prev === 'dark' ? 'light' : 'dark'));
+    }
 
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
@@ -14,7 +28,7 @@ const Navbar = () => {
 
   return (
     <header>
-       <nav className='flex between wrapper navbar'>
+       <nav className='mobile-header flex between wrapper navbar'>
         <a href='#' className='logo'>
             <span>J</span> Junaid.
         </a>
@@ -22,29 +36,29 @@ const Navbar = () => {
         {/* DESKTOP MENU */}
         <ul className='flex gap-2 desktop-menu'>
             <li>
-                <a href='#' className='link'>Home</a>
+                <a href='#home' className='link'>Home</a>
             </li>
             <li>
-                <a href='#' className='link'>Services</a>
+                <a href='#services' className='link'>Services</a>
             </li>
             <li>
-                <a href='#' className='link'>About Me</a>
+                <a href='#about' className='link'>About Me</a>
             </li>
             <li>
-                <a href='#' className='link'>Projects</a>
+                <a href='#portfolio' className='link'>Projects</a>
             </li>
             <li>
-                <a href='#' className='link'>Testimonials</a>
+                <a href='#testimonial' className='link'>Testimonials</a>
             </li>
             <li>
-                <a href='#' className='link'>Contact Me</a>
+                <a href='#contact-me' className='link'>Contact Me</a>
             </li>
         </ul>
             <div className='flex gap-2 nav-action'>
-                <a href='#' className='icon-container border-inverse'>
-                    <FiSun />
+                <a href='#' className='icon-container border-inverse' onClick={toggleTheme}>
+                    {theme === 'dark' ? <FiSun /> : <IoMoonOutline />}
                 </a>
-                <a href='#' className='btn'>Let's Talk</a>
+                <a href='tel:+923152365237' className='btn'>Let's Talk</a>
                 <a href='#' className='hamburger' onClick={toggleMenu}>
                     {isMenuActive ? <FaXmark/> : <FaBarsStaggered/>}
                 </a>
@@ -52,25 +66,25 @@ const Navbar = () => {
             {/* MOBILE MENU */}
             <ul className={`mobile-menu ${isMenuActive ? 'mobile-menu-active' : null}`}>
             <li>
-                <a href='#' className='link'>Home</a>
+                <a href='#home' className='link'>Home</a>
             </li>
             <li>
-                <a href='#' className='link'>Services</a>
+                <a href='#services' className='link'>Services</a>
             </li>
             <li>
-                <a href='#' className='link'>About Me</a>
+                <a href='#about' className='link'>About Me</a>
             </li>
             <li>
-                <a href='#' className='link'>Projects</a>
+                <a href='#portfolio' className='link'>Projects</a>
             </li>
             <li>
-                <a href='#' className='link'>Testimonials</a>
+                <a href='#testimonial' className='link'>Testimonials</a>
             </li>
             <li>
-                <a href='#' className='link'>Contact Me</a>
+                <a href='#contact-me' className='link'>Contact Me</a>
             </li>
             <li>
-                <a href='#' className='btn'>Let's Talk</a>
+                <a href='tel:+923152365237' className='btn'>Let's Talk</a>
             </li>
         </ul>
        </nav>

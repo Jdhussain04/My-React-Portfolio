@@ -5,7 +5,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <section>
+    <section id='home'>
         <div className='hero-section flex wrapper gap-4'>
             <div className="hero-content">
                 <span className='sub-text'>Hello There!</span>

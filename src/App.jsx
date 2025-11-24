@@ -5,6 +5,10 @@ import Headline from './components/Headline/Headline'
 import Services from './components/Services/Services'
 import AboutMe from './components/AboutMe/AboutMe'
 import Projects from './components/Projects/Projects'
+import Education from './components/Education/Education'
+import Testimonial from './components/Testimonial/Testimonial'
+import ContactMe from './components/ContactMe/ContactMe'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return(
@@ -16,6 +20,11 @@ const App = () => {
       <AboutMe/>
       <Projects/>
       <Headline/>
+      <Education/>
+      <Testimonial/>
+      <ContactMe/>
+      <Headline/>
+      <Footer/>
     </div>
   )
 }

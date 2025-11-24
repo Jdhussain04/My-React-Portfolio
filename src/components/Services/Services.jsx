@@ -24,11 +24,11 @@ const Services = () => {
     })
 
   return (
-    <section>
+    <section id='services'>
         <div className='wrapper p-block-9 border-btm'>
             <div className='flex between gap-4'>
                 <div>
-                    <span className='sub-text overlay-text' datatype='services'>My Specialization</span>
+                    <span className='sub-text overlay-text' datatype='Services'>My Specialization</span>
                     <h2><span className='green-text'>Services</span> I Provide</h2>
                 </div>
                 <a href='#' className='btn self-end'> View All Services</a>

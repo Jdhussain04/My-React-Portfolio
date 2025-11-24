@@ -24,7 +24,7 @@ const Projects = () => {
                     </ul>
                     <h3 className='mt-2'>{project.title}</h3>
                     <p className='para'>{project.description}</p>
-                    <a href='#' className='icon-container border-inverse rotate'>
+                    <a href={project.link} target="_blank" className='icon-container border-inverse rotate'>
                         <FaArrowRight/>
                     </a>
                 </div>
@@ -32,11 +32,11 @@ const Projects = () => {
         )
     })
   return (
-    <section>
+    <section id='portfolio'>
         <div className='wrapper p-block-9'>
             <div className='flex between gap-4'>
                 <div>
-                    <span className='sub-text overlay-text' datatype='My Portfolio'>My Portfolio</span>
+                    <span className='sub-text overlay-text' datatype='Portfolio'>My Portfolio</span>
                     <h2>Let's have a look<br/> at <span className='green-text'>My Portfolio</span></h2>
                 </div>
                 <a href='#' className='btn self-end'> View All Projects</a>
@@ -57,6 +57,7 @@ const ProjectData = [
             title: 'BritechX – Modern WordPress Business Website',
             description: 'Designed and developed a fully responsive WordPress website for BritechX, featuring clean layouts, intuitive navigation, and a professional corporate look.',
             image: Project1,
+            link: 'https://britechx.co.uk/',
             tech: [
         {
             id: 1,
@@ -76,6 +77,7 @@ const ProjectData = [
             title: 'TBA Global – Accounting & Tax Consultancy Website',
             description: 'Built a modern, responsive WordPress website for TBA Global, streamlining their accounting, VAT registration, and compliance services in a professional, user-friendly design.',
             image: Project2,
+            link: 'https://tbaglobal.com/',
             tech: [
         {
             id: 1,
@@ -99,6 +101,7 @@ const ProjectData = [
             title: 'JW Radford – Motivational Speaker & Consultant',
             description: 'Built a personal branding website for James “JW” Radford, featuring motivational content, his personal story, and a platform to connect with his audience.',
             image: Project3,
+            link: 'https://jwradford.com/',
             tech: [
         {
             id: 1,

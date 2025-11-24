@@ -62,7 +62,7 @@
 
 .border-inverse{
     border: .1rem solid rgba(123, 123, 123, 0.2);
-    color: var(--text-secondary-clr);
+    color: var(--background-clr);
 }
 
 .hamburger{
@@ -100,26 +100,26 @@
 @media screen and (max-width: 790px){
 .desktop-menu,
 .nav-action .btn{
-    display: none;
+    display: none !important;
     }
 
     .hamburger{
-        display: block;
+        display: block !important;
     }
 
     .logo{
-        font-size: 1.6rem;
+        font-size: 1.6rem !important;
     }
 
     .logo span{
-        width: 2.5rem;
-        margin-right: .2rem;
+        width: 2.5rem !important;
+        margin-right: .2rem !important;
     }
 
     .mobile-menu{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
+        display: flex !important;
+        flex-direction: column !important;
+        position: absolute !important;
         top: 20%;
         left: -100%;
         transform: translateX(-50%);
@@ -137,7 +137,14 @@
     }
 
     .mobile-menu-active{
-        left: 50%;
+        left: 50% !important;
         transform: translateX(-50%);
+    }
+
+       .mobile-header.flex.between {
+        flex-direction: row !important;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
     }
 }

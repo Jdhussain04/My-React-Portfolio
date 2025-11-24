@@ -51,6 +51,31 @@ p{
     background: transparent;
 }
 
+@media (max-width: 768px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content .flex {
+    justify-content: center;
+  }
+
+  h1 span,
+  .hero-content h1{
+    font-size: 2.5rem;
+  }
+}
+
+
 
 
 

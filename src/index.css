@@ -15,8 +15,16 @@
   --accent-clr: #FF8C00;
 }
 
+[data-theme = 'light']{
+  --background-clr: #fff;
+  --surface-clr: #F5F5F5;
+  --text-primary-clr: #080808;
+  --text-secondary-clr: #333;
+}
+
 body{
   background: var(--background-clr);
+  overflow-x: hidden !important;
 }
 
 a{
@@ -60,4 +68,35 @@ img{
 
 .p-block-9{
   padding-block: 9rem;
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+.bg-header{
+  padding: 1.5rem;
+  background-image: url('../src/assets/background1.jpeg');
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.icon-container{
+    color: var(--background-clr);
+    background: var(--accent-clr);
+}
+
+
+
+@media screen and (max-width: 768px){
+      .p-block-9{
+        padding-block: 7rem;
+      }
 }

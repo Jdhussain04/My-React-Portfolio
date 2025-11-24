@@ -17,3 +17,41 @@ h6{
 .gap-5{
     gap: 5rem;
 }
+
+
+
+
+@media (max-width: 768px) {
+
+  /* Parent container flex column */
+  #about .flex.gap-5 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Overlay heading center */
+  #about .overlay-text {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto;
+  }
+
+  /* Image center */
+  #about .about-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Download button center */
+  #about .about-content .btn {
+    display: inline-block;
+    margin: 1rem auto 0 auto;
+  }
+
+  /* Stats section center */
+  #about .about-content .flex.gap-2 {
+    justify-content: center;
+  }
+}

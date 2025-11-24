@@ -4,13 +4,13 @@ import AboutImage from '../../assets/about-image1.png'
 
 const AboutMe = () => {
   return (
-    <section>
+    <section id='about'>
       <div className="flex gap-5 wrapper p-block-9 border-btm">
         <div className="about-image">
             <img src={AboutImage}/>
         </div>
         <div className="about-content">
-            <span className='sub-text overlay-text' datatype='About Me'>About Me</span>
+            <span className='sub-text overlay-text' datatype='About'>About Me</span>
             <h2>Who is <span className='green-text'>Junaid?</span></h2>
             <p className='para'>a web developer passionate about clean code, modern design, user experience, and building responsive, accessible, and high performing.</p>
 

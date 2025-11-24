@@ -75,10 +75,12 @@ h4{
     align-items: stretch;
 }
 
-.hide-text{
+.hide-text {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: box;
+    line-clamp: 2;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -113,9 +115,9 @@ h4{
 
 @media screen and (max-width: 790px){
     .overlay-text::before{
-        font-size: 4rem;
-        top: 5%;
-        left: -15%;
+        font-size: 2rem;
+        top: 1.3rem;
+        left: auto;
     }
 
     h2{
@@ -125,4 +127,15 @@ h4{
     padding-block-9{
         padding-block: 5rem;
     }
+
+    #services .flex.between {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #services .flex.between .btn {
+    margin-top: 1rem;   /* thoda spacing */
+    align-self: center;  /* center align */
+  }
 }
