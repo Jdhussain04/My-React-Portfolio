@@ -1,0 +1,11 @@
+@media screen and (max-width: 790px) {
+    .port-sec h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+    }
+
+    .port-sec p{
+        text-align: center;
+    }
+}

@@ -1,0 +1,97 @@
+.project-image,
+.project-content{
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.project-image{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.rotate{
+    transform: rotate(-45deg);
+    transition: .3s ease-in-out;
+}
+
+.card:hover .rotate{
+    transform: rotate(0);
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--text-primary-clr);
+}
+
+.project:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+.list{
+    padding: .8rem 2rem;
+    background: var(--accent-clr);
+    color: var(--background-clr);
+    border-radius: 100vw;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 790px){
+    .list{
+        padding: .8rem 1.5rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+
+    .gap-5{
+        gap: 2rem;
+    }
+
+    .flex.between {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Overlay heading center */
+  .flex.between .overlay-text {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto 0.5rem auto;
+  }
+
+  /* Button center aur spacing */
+  .flex.between .btn {
+    margin-top: 1rem;
+    align-self: center;
+  }
+
+  #portfolio .overlay-text::before{
+    left: 5rem;
+  }
+}

@@ -1,0 +1,141 @@
+h2{
+    font-size: 2.8rem;
+    line-height: 100%;
+    margin-top: 2.5rem;
+    color: var(--text-primary-clr);
+    text-transform: capitalize;
+}
+
+.overlay-text{
+    position: relative;
+}
+
+.overlay-text::before{
+    content: attr(datatype);
+    position: absolute;
+    font-size: 6rem;
+    color: var(--text-primary-clr);
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: -1;
+    opacity: .08;
+    top: -70%;
+    left: -20%;
+}
+
+.self-end{
+    align-self: flex-end;
+}
+
+.card{
+    padding: 1.5rem;
+    background: var(--surface-clr);
+    border: .1rem solid rgba(123, 123, 123, 0.2);
+    border-radius: 1rem;
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+h4{
+    font-size: 1.7rem;
+    color: var(--text-primary-clr);
+}
+
+.service-icon{
+    width: 4rem;
+    aspect-ratio: 1;
+    font-size: 1.8rem;
+    color: var(--text-primary-clr);
+    background: var(--background-clr);
+    border: .1rem solid rgba(123, 123, 123, 0.2);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100vw;
+}
+
+.service-icon:hover{
+    background: var(--accent-clr);
+}
+
+.arrow{
+    vertical-align: middle;
+}
+
+.m-block-1{
+    margin-block: 1rem;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.hide-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: box;
+    line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.design{
+    position: relative;
+}
+
+.design::before{
+    content: '';
+    position: absolute;
+    background: var(--accent-clr);
+    inset: 2rem 0 7rem -0.6rem;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.border-btm{
+    border-bottom: .1rem solid rgba(123, 123, 123, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 790px){
+    .overlay-text::before{
+        font-size: 2rem;
+        top: 1.3rem;
+        left: auto;
+    }
+
+    h2{
+        font-size: 2.4rem;
+    }
+
+    padding-block-9{
+        padding-block: 5rem;
+    }
+
+    #services .flex.between {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #services .flex.between .btn {
+    margin-top: 1rem;   /* thoda spacing */
+    align-self: center;  /* center align */
+  }
+}
