@@ -12,7 +12,7 @@ const AboutMe = () => {
         <div className="about-content">
             <span className='sub-text overlay-text' datatype='About'>About Me</span>
             <h2>Who is <span className='green-text'>Junaid?</span></h2>
-            <p className='para'>a web developer passionate about clean code, modern design, user experience, and building responsive, accessible, and high performing.</p>
+            <p className='para'>A web developer passionate about clean code, modern design, user experience, and building responsive, accessible, and high performing.</p>
 
             <div className='flex gap-2 m-block-3'>
                 <div>

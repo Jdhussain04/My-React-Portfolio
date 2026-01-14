@@ -90,4 +90,8 @@ h3{
     margin-top: 1rem;
     align-self: center;
   }
+
+  #portfolio .overlay-text::before{
+    left: 5rem;
+  }
 }

@@ -48,19 +48,19 @@ const servicesData = [
     {
         id: 1,
         title: 'Web Development',
-        description: 'I offer professional Web Development services that asthetics with functionality, creating intuitive, user-friendly interfaces. My engagement, ensure seamless experiences, and align perfectly with your brands goals across web and mobile platforms.',
+        description: 'I offer professional Web Development services that blend aesthetics with functionality, creating seamless user experiences.',
         icon: <FaPenRuler />,
     },
     {
         id: 2,
         title: 'WordPress Development',
-        description: 'I offer professional Web Development services that asthetics with functionality, creating intuitive, user-friendly interfaces. My engagement, ensure seamless experiences, and align perfectly with your brands goals across web and mobile platforms.',
+        description: 'I craft responsive WordPress websites, turning creative designs into fully functional, user-friendly sites.',
         icon: <FaPenNib />,
     },
     {
         id: 3,
         title: 'Wix Design',
-        description: 'I offer professional Web Development services that asthetics with functionality, creating intuitive, user-friendly interfaces. My engagement, ensure seamless experiences, and align perfectly with your brands goals across web and mobile platforms.',
+        description: 'I design responsive Wix sites that bring creative ideas to life with user-friendly layouts.',
         icon: <FaLaptopCode />,
     },
 ]

@@ -72,7 +72,7 @@ const Card = ({ title, icon, items }) => {
 
 const Education = () => {
     return (
-        <section>
+        <section id='education'>
             <div className="wrapper p-block-9 border-btm">
                 <div className='text-center'>
                     <span className='sub-text overlay-text middle' datatype='Education & Work'>

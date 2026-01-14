@@ -3,7 +3,7 @@ import './Navbar.css'
 import { FiSun } from "react-icons/fi";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { IoMoonOutline } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* DESKTOP MENU */}
         <ul className='flex gap-2 desktop-menu'>
             <li>
-                <a href='#home' className='link'>Home</a>
+                <Link to="/" className="link">Home</Link>
             </li>
             <li>
                 <a href='#services' className='link'>Services</a>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <a href='#about' className='link'>About Me</a>
             </li>
             <li>
-                <a href='#portfolio' className='link'>Projects</a>
+                <Link to="/projects" className="link">Projects</Link>
             </li>
             <li>
                 <a href='#testimonial' className='link'>Testimonials</a>
@@ -66,7 +66,7 @@ const Navbar = () => {
             {/* MOBILE MENU */}
             <ul className={`mobile-menu ${isMenuActive ? 'mobile-menu-active' : null}`}>
             <li>
-                <a href='#home' className='link'>Home</a>
+                <Link to="/" className="link">Home</Link>
             </li>
             <li>
                 <a href='#services' className='link'>Services</a>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <a href='#about' className='link'>About Me</a>
             </li>
             <li>
-                <a href='#portfolio' className='link'>Projects</a>
+                <Link to="/projects" className="link">Projects</Link>
             </li>
             <li>
                 <a href='#testimonial' className='link'>Testimonials</a>

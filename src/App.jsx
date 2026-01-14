@@ -1,32 +1,26 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Headline from './components/Headline/Headline'
-import Services from './components/Services/Services'
-import AboutMe from './components/AboutMe/AboutMe'
-import Projects from './components/Projects/Projects'
-import Education from './components/Education/Education'
-import Testimonial from './components/Testimonial/Testimonial'
-import ContactMe from './components/ContactMe/ContactMe'
 import Footer from './components/Footer/Footer'
+import Home from './components/Home'
+import OurProjects from './components/Portfolio/OurProjects';
 
 const App = () => {
-  return(
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Headline/>
-      <Services/>
-      <AboutMe/>
-      <Projects/>
-      <Headline/>
-      <Education/>
-      <Testimonial/>
-      <ContactMe/>
-      <Headline/>
-      <Footer/>
-    </div>
+  return (
+    <BrowserRouter basename="/My-React-Portfolio/">
+      <Navbar />
+
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<Home />} />
+
+        {/* Projects Page */}
+        <Route path="/projects" element={<OurProjects />} />
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;

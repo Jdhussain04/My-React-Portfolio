@@ -70,6 +70,11 @@
 
 @media (max-width: 768px) {
 
+
+  #education .list{
+    margin: 1rem;
+  }
+
   /* Footer Top "Connect" section */
   footer > .wrapper > .flex.between {
     flex-direction: column;
@@ -116,10 +121,21 @@
   /* Footer email input field */
   footer .footer-input {
     flex-direction: column;
-    gap: 0.5rem
   }
 
   .footer-wrapper h6{
     text-align: center;
   }
+
+  .input-btn{
+    padding: 12px 5px 12px 5px;
+  }
+
+  .footer-wrapper:nth-child(1) {
+    flex-basis: 220px;
+}
+
+  .p-block-7 {
+      padding-block: 2rem;
+}
 }

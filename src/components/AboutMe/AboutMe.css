@@ -54,4 +54,8 @@ h6{
   #about .about-content .flex.gap-2 {
     justify-content: center;
   }
+
+  #about .overlay-text::before{
+    left: 7rem;
+  }
 }

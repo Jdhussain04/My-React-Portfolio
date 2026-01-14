@@ -58,7 +58,7 @@ const testimonialData = [
         title: 'CEO, Software Company',
         image: profile1,
         rating: 5,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, molestias.',
+        text: 'Junaid created a responsive WordPress site with modern design, clear communication, and smooth delivery.',
     },
     {
         id: 2,
@@ -66,7 +66,7 @@ const testimonialData = [
         title: 'CEO, Plant Shop App',
         image: profile2,
         rating: 5,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, molestias.',
+        text: 'Junaid developed a user friendly WordPress website, delivering reliable results with professional support.',
     },
     {
         id: 3,
@@ -74,7 +74,7 @@ const testimonialData = [
         title: 'CEO, Tech Innovation',
         image: profile3,
         rating: 5,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, molestias.',
+        text: 'Junaid built our WordPress website professionally, ensuring strong performance, clean layout, and timely completion.',
     },
 ]
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Projects.css'
+import { Link } from 'react-router-dom';
 import Project1 from '../../assets/britechx-hero.PNG'
 import Project2 from '../../assets/tba-hero.PNG'
 import Project3 from '../../assets/jw-hero.PNG'
@@ -39,7 +40,7 @@ const Projects = () => {
                     <span className='sub-text overlay-text' datatype='Portfolio'>My Portfolio</span>
                     <h2>Let's have a look<br/> at <span className='green-text'>My Portfolio</span></h2>
                 </div>
-                <a href='#' className='btn self-end'> View All Projects</a>
+                <Link to="/projects" className='btn self-end'>View All Projects</Link>
             </div>
 
             <div className='flex column gap-2 mt-5'>
